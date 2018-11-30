@@ -1,3 +1,5 @@
+A survey of crypto library usage in Github Repositories. Created by Scott Griffy for Charles Winstead's CS586 Introduction to DBMS class at Portland State University, Fall 2018.
+
 I created a scraper, database, and web interface that allows users to ask questions about the usage of different crypto libraries on github.
 I ended up targeting 9 specific C crypto libraries due to the accuracy while querying them and their popularity:
 openssl - [info](https://www.openssl.org/)
@@ -16,3 +18,5 @@ scrape.py: used to gather data from Github and put it into the data
 frontend.py: used to serve the data in the form of a web app
 
 I've currently got a demo running at [http://cara.bid:8002/](http://cara.bid:8002/).
+
+The proj\_sub\*.pdf files were submissions for this project for the class.

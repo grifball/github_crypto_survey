@@ -6,9 +6,8 @@ from datetime import datetime
 import sys
 
 '''
-I stole this template from:
-Example of NewsMeme (open source forum like hacker news or Reddit).
-# Adapted from https://bitbucket.org/danjac/newsmeme (newsmeme / newsmeme / models)
+I stole this template from the eralchemy project:
+	https://github.com/Alexis-benoist/eralchemy/blob/master/example/newsmeme.py	
 But, to get the 'lc' and 'rc' attributes of ForeignKey to work, you have to patch eralchemy and sqlalchemy
 I suggest doing all this in a virtual environment, that'll make this a lot easier:
 https://docs.python.org/3/library/venv.html
