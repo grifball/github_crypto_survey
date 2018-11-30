@@ -182,7 +182,7 @@ options: {
       if page=='library':
         self.wfile.write(bytes("Here are the crypto libraries that this repo uses:", encoding='utf-8'))
       elif page=='crypto_library':
-        self.wfile.write(bytes("Here are the repo that use this crypto library:", encoding='utf-8'))
+        self.wfile.write(bytes("Here are the repos that use this crypto library:", encoding='utf-8'))
       if page=='library':
         cur.execute("select U.library,P.repo_name,U.num_indicators,stars from \"gitsec.Repo\" R inner join \"gitsec.UsesCryptoLibrary\" U on R.full_name=U.library inner join \"gitsec.CryptoProvidingRepo\" P on crypto_library=repo_name where num_indicators>0 and U.library='"+library+"' and (P.hide_from_ui <> '1' or P.hide_from_ui is null) order by num_indicators desc;")
       elif page=='crypto_library':
